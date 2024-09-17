@@ -1,5 +1,5 @@
 import Cart from "../cart/cart";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   Disclosure,
   DisclosureButton,
@@ -45,11 +45,13 @@ function NavBar({ children }) {
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
                 <div className="flex-shrink-0">
-                  <img
-                    alt="Your Company"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    className="h-8 w-8"
-                  />
+                  <Link to="/">
+                    <img
+                      alt="Your Company"
+                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                      className="h-8 w-8"
+                    />
+                  </Link>
                 </div>
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
